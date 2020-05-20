@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CustomStyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+    .abc{
+        margin: 1%;
+        font-size: 22px;
+        
+    }
+    #abcd{
+        margin: 4%;
+        font-size: 20px;
+        border: 1px solid blueviolet;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container" style="background-color: rgb(255, 252, 80);" >
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        </br><h1><b>Welcome to Game Zone...</b></h1></br></br>
+                        <h3 style="color:  rgb(23, 9, 46); rgb(23, 9, 46);;">Find the value of '?' </h3></br>
+                        <div >
+
+                        <div>
+                            <label class="abc" style="border: 2px solid rgb(243, 14, 14); padding: 1%;"><b>2 + 3 = 10</b></label>
+                        </div>
+                        <div>
+                            <label class="abc" style="border: 2px solid rgb(32, 247, 13); padding: 1%;"><b>8 + 4 = 96</b></label>
+                        </div>
+                        <div>
+                            <label class="abc" style="border: 2px solid rgb(145, 94, 94); padding: 1%;"><b>7 + 2 = 63</b></label>
+                        </div>
+                        <div>
+                            <label class="abc" style="border: 2px solid rgb(58, 15, 212); padding: 1%;"><b>6 + 5 = 66</b></label>
+                        </div>
+                        <div>
+                            <label class="abc" style="border: 2px solid rgb(211, 43, 147); padding: 1%;"><b>9 + 5 = ?</b></label>
+                        </div>    
+                        </div></br>
+                        <h4 style="color:brown">Click on answer -></h4>
+                        <div >
+                            <button class="btn" onclick="myFunction()" id="abcd">14</button>
+                            <button class="btn" onclick="myFunction()" id="abcd">69</button>
+                            <button class="btn" onclick="ans()" id="abcd">126</button>
+                            <button  class="btn" onclick="myFunction()" id="abcd">125</button>
+                            <span class="h4" id="demo" style="color: red;"></span>
+                        <button class="btn btn-lg btn-success" id="aaa"><a href="gif1.html" style="color:white; ">next</a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="ee.webp" width="100%" height="90%"  style="margin-top: 5%;">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Try again";
+    }
+    
+    </script>
+    
+    <script>
+        var x = document.getElementById("aaa");
+         x.disabled = true;
+       
+       function ans() {
+         var x = document.getElementById("aaa");
+         x.disabled = false;
+       }
+    </script>
+
+ 
+
+</body>
+</html>
+<!-- <button type="button" id="myBtn" onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myBtn");
+  x.disabled = true;
+}
+</script> -->
+
+
+<!-- <button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.createElement("BUTTON");
+  var t = document.createTextNode("Click me");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+</script> -->
+
+
+<!-- <p>Click to disable the BUTTON element:</p>
+
+
+<button type="button" id="Btn" onclick="myFunction()">Try it</button>
+<button type="button" id="myBtn" onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+ var x = document.getElementById("myBtn");
+  x.disabled = true;
+
+function myFunction() {
+  var x = document.getElementById("myBtn");
+  x.enabled = false;
+}
+</script> -->

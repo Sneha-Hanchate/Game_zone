@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CustomStyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+    .abc{
+        margin: 1%;
+        font-size: 22px;
+    }
+    #abcd{
+        margin: 4%;
+        font-size: 20px;
+        border: 1px solid blueviolet;
+    }
+</style>
+</head>
+<body>
+
+    <div class="container" style="background-color: rgb(12, 11, 12);" >
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-8">
+                        </br></br><h1 style="color: white;"><b>Welcome to Game Zone...</b></h1></br></br>
+                        <h3 style="color:white; ">Find the value of '?' </h3>                       
+                            <div >
+
+                                <div>
+                                    <label class="abc" style=" padding: 1%; color: rgb(185, 130, 130);"><b>3 , 2 , 4 = 10</b></label>
+                                </div>
+                                <div>
+                                    <label class="abc" style=" padding: 1%;  color: rgb(119, 113, 150);"><b>4 , 3 ,5 = 17</b></label>
+                                </div>
+                                <div>
+                                    <label class="abc" style=" padding: 1%;  color: rgb(169, 172, 126);"><b>5 , 4 ,6 = 26</b></label>
+                                </div>
+                                <div>
+                                    <label class="abc" style=" padding: 1%;  color: rgb(160, 115, 154);"><b>6 , 5 , 7 = 37</b></label>
+                                </div>
+                                <div>
+                                    <label class="abc" style=" padding: 1%;  color: rgb(110, 151, 148);"><b>7 , 6 , 8 = ?</b></label>
+                                </div>    
+                            </div></br>
+                        <h4 style="color:brown">Click on answer -></h4>
+                        <div >
+                            <button class="btn" onclick="myFunction()" id="abcd" style="color: white;">40</button>
+                            <button class="btn" onclick="myFunction()" id="abcd" style="color: white;">23</button>
+                            <button class="btn" onclick=" myFunction()" id="abcd" style="color: white;">36</button>
+                            <button  class="btn" onclick="ans()" id="abcd" style="color: white;">50</button>
+                            <span class="h4" id="demo" style="color: rgb(204, 194, 194);"></span>
+                        <button class="btn btn-lg btn-success" id="aaa"><a href="gif3.html" style="color:white; ">next</a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="gg.webp" width="100%" height="90%"  style="margin-top: 5%;">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Try again";
+    }
+    
+    </script>
+    
+    <script>
+        var x = document.getElementById("aaa");
+         x.disabled = true;
+       
+       function ans() {
+         var x = document.getElementById("aaa");
+         x.disabled = false;
+       }
+    </script>
+
+ 
+
+</body>
+</html>
